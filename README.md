@@ -1,0 +1,1 @@
+# osuny-plugin-single-page-application
