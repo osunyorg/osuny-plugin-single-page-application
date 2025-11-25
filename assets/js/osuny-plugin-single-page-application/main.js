@@ -1,5 +1,6 @@
 import Swup from 'swup';
 import SwupBodyClassPlugin from '@swup/body-class-plugin';
+import SwupA11yPlugin from '@swup/a11y-plugin';
 
 document.addEventListener('DOMContentLoaded', function () {
     const animated = false;
@@ -7,7 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const swup = new Swup({
         animationSelector: false,
         containers: ['#main'],
-        plugins: [new SwupBodyClassPlugin()]
+        plugins: [
+            new SwupBodyClassPlugin(),
+            new SwupA11yPlugin()
+        ]
     });
 
     if (animated) {

@@ -2,12 +2,39 @@
 # yarn lockfile v1
 
 
+"@swup/a11y-plugin@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@swup/a11y-plugin/-/a11y-plugin-5.0.0.tgz#7b355fc74314647fa26c38934973be761390468a"
+  integrity sha512-t0pVWAVea+Imjj05n9QMPfqZhw9i5rx7BV/l3Ejeic+X3Qs0VZwVvEJIcdqireCVJgAJGZAPlmgbiuaj5UHJaQ==
+  dependencies:
+    "@swup/plugin" "^4.0.0"
+    focus-options-polyfill "^1.5.0"
+
+"@swup/body-class-plugin@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@swup/body-class-plugin/-/body-class-plugin-3.3.0.tgz#6ea07cdb4f10cf5ba6b7b511fcda3d4c2a28731c"
+  integrity sha512-4h/6mAgDd0+ml8Gc2kX8tikIR0HZZLF+WTnfm0JTVrGDw74bgEBenbsaWFfIS+gn4RWKZdWBUOfaZ+Im5J7Gvw==
+  dependencies:
+    "@swup/plugin" "^4.0.0"
+
+"@swup/plugin@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@swup/plugin/-/plugin-4.0.0.tgz#5400eef1a5b90d463f591bde9dd40bf59fea5081"
+  integrity sha512-3Kq31BJxnzoPg643YxGoWQggoU6VPKZpdE5CqqmP7wwkpCYTzkRmrfcQ29mGhsSS7xfS7D33iZoBiwY+wPoo2A==
+  dependencies:
+    swup "^4.0.0"
+
 delegate-it@^6.0.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/delegate-it/-/delegate-it-6.3.0.tgz#43409d44280e5ae1621a84239176f62a59be9f12"
   integrity sha512-WAa6cA61M5mfDR31PBgMNQQ3LY1q++TxnZzcm7E9XV8ODBPxDutxH0toTR/BXqIkLaVuU7ntFe1uOqDllhA22A==
   dependencies:
     typed-query-selector "^2.11.2"
+
+focus-options-polyfill@^1.5.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/focus-options-polyfill/-/focus-options-polyfill-1.6.0.tgz#12ef3081dae9801d32dfcffd7b69259ca8f57198"
+  integrity sha512-uyrAmLZrPnUItQY5wTdg31TO9GGZRGsh/jmohUg9oLmLi/sw5y7LlTV/mwyd6rvbxIOGwmRiv6LcTS8w7Bk9NQ==
 
 opencollective-postinstall@^2.0.2:
   version "2.0.3"
@@ -19,7 +46,7 @@ path-to-regexp@^6.2.1:
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.3.0.tgz#2b6a26a337737a8e1416f9272ed0766b1c0389f4"
   integrity sha512-Yhpw4T9C6hPpgPeA28us07OJeqZ5EzQTkbfwuhsUg0c237RomFoETJgmp2sa3F/41gfLE6G5cqcYwznmeEeOlQ==
 
-swup@^4.8.2:
+swup@^4.0.0, swup@^4.8.2:
   version "4.8.2"
   resolved "https://registry.yarnpkg.com/swup/-/swup-4.8.2.tgz#51e12dad05eb7ea8f0ffb3d60ebff9f545643d48"
   integrity sha512-Art2vB4idZ7EFZQhhA47ZifkmZMPgcAwE6z28BhorbTYCO8jcovcc5MasX49GGdXYJWO43DTut7iZb5yrQdEfA==
