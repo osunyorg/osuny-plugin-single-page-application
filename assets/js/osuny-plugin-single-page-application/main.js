@@ -1,6 +1,7 @@
 import Swup from 'swup';
 import SwupBodyClassPlugin from '@swup/body-class-plugin';
 import SwupA11yPlugin from '@swup/a11y-plugin';
+import SwupFadeTheme from '@swup/fade-theme';
 
 document.addEventListener('DOMContentLoaded', function () {
     const animated = false;
@@ -25,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     swup.hooks.on('page:view', () => {
         window.osuny.menu.close();
-        window.noesya.footer.reinit();
         window.osuny.lightbox.reinit();
         window.osuny.slidersFactory.reinit();
         window.osuny.page.init();
@@ -34,6 +34,11 @@ document.addEventListener('DOMContentLoaded', function () {
             setTimeout(() => {
                 document.body.classList.remove('is-updating');
             }, 500)
+        }
+
+        // TODO : remove this in noesya sites only
+        if (window.noesya) {
+            window.noesya.footer.reinit();
         }
     });
 });
