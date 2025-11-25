@@ -1,7 +1,6 @@
 import Swup from 'swup';
 import SwupBodyClassPlugin from '@swup/body-class-plugin';
 import SwupA11yPlugin from '@swup/a11y-plugin';
-import SwupFadeTheme from '@swup/fade-theme';
 
 document.addEventListener('DOMContentLoaded', function () {
     const animated = false;
