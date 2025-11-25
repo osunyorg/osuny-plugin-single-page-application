@@ -1,0 +1,11 @@
+{
+  "name": "osuny-plugin-single-page-application",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:osunyorg/osuny-plugin-single-page-application.git",
+  "author": "Alexis BENOIT <alex@noesya.coop>",
+  "license": "MIT",
+  "dependencies": {
+    "swup": "^4.8.2"
+  }
+}
