@@ -4,13 +4,13 @@ Ce plugin transforme un site normal en application, avec des rechargements de pa
 
 ## Utilisation
 
-D'abord, importer le plugin dans le site.
+1. Importer le plugin dans le site.
 
 ```bash
 git submodule add git@github.com:osunyorg/osuny-plugin-single-page-application.git themes/osuny-plugin-single-page-application
 ```
 
-Ensuite, ajouter le plugin comme un thème dans `config/_default/config.yaml`.
+2. Ajouter le plugin comme un thème dans `config/_default/config.yaml`.
 
 ```yaml
 theme: 
@@ -18,7 +18,26 @@ theme:
   - osuny-plugin-single-page-application
 ```
 
-TODO explication JS
+3. Importer le js
+
+```main.js
+import './osuny-plugin-single-page-application/main';
+```
+
+4. Ajouter la dépendance
+
+```package.json
+ "dependencies": {
+    "osuny": "./themes/osuny",
+    "osuny-plugin-single-page-application": "./themes/osuny-plugin-single-page-application"
+  }
+```
+
+
+5. Installer les packages
+
+```yarn upgrade```
+
 
 ## Exemples 
 
