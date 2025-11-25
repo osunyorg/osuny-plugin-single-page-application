@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const swup = new Swup({
         animationSelector: false,
-        containers: ['#main'],
+        containers: ['#main, #navigation'],
         plugins: [
             new SwupBodyClassPlugin(),
             new SwupA11yPlugin()
