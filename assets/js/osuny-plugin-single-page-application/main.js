@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const swup = new Swup({
         animationSelector: false,
         containers: ['#main', '.nav-level-1'],
+        ignoreVisit: (url, { el } = {}) => (
+            el?.matches('a[lang]')
+        ),
         plugins: [
             new SwupBodyClassPlugin(),
             new SwupA11yPlugin()
