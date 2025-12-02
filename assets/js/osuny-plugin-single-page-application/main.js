@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const swup = new Swup({
         animationSelector: false,
-        containers: ['#main', '.nav-level-1'],
+        containers: ['#main', '#document-header .nav-level-1', '#document-footer .nav-level-1'],
         ignoreVisit: (url, { el } = {}) => (
             el?.matches('a[lang]')
         ),
