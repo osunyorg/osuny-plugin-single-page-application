@@ -2,20 +2,28 @@ import Swup from 'swup';
 import SwupBodyClassPlugin from '@swup/body-class-plugin';
 import SwupA11yPlugin from '@swup/a11y-plugin';
 
-document.addEventListener('DOMContentLoaded', function () {
-    const animated = false;
+window.osuny = window.osuny || {};
 
-    const swup = new Swup({
-        animationSelector: false,
-        containers: ['#main', '#document-header .nav-level-1', '#document-footer'],
-        ignoreVisit: (url, { el } = {}) => (
-            el?.matches('a[lang]')
-        ),
-        plugins: [
-            new SwupBodyClassPlugin(),
-            new SwupA11yPlugin()
-        ]
-    });
+document.addEventListener('DOMContentLoaded', function () {
+    const animated = false,
+        options = {
+            animationSelector: false,
+            containers: ['#main', '#document-header .nav-level-1', '#document-footer'],
+            ignoreVisit: (url, { el } = {}) => (
+                el?.matches('a[lang]')
+            ),
+            plugins: [
+                new SwupBodyClassPlugin(),
+                new SwupA11yPlugin()
+            ]
+        };
+    let attribut;
+
+    for (attribut in window.osuny.swupOptions) {
+        options[attribut] = window.osuny.swupOptions[attribut];
+    }
+
+    const swup = new Swup(options);
 
     if (animated) {
         swup.hooks.replace('animation:out:await', async () => {
