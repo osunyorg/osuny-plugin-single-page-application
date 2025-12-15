@@ -50,6 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (window.noesya) {
             window.noesya.footer.reinit();
         }
+
+        window.scrollTo(0, 0);
     });
 });
 
